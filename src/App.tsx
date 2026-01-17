@@ -1,6 +1,10 @@
-import React from 'react';
+//import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import Calendar from "./pages/Calendar";
+import VideoCall from "./pages/VideoCall";
+
+
 
 // Layouts
 import { DashboardLayout } from './components/layout/DashboardLayout';
@@ -27,6 +31,7 @@ import { SettingsPage } from './pages/settings/SettingsPage';
 import { HelpPage } from './pages/help/HelpPage';
 import { DealsPage } from './pages/deals/DealsPage';
 
+
 // Chat Pages
 import { ChatPage } from './pages/chat/ChatPage';
 
@@ -38,6 +43,10 @@ function App() {
           {/* Authentication Routes */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/video-call" element={<VideoCall />} />
+
+
           
           {/* Dashboard Routes */}
           <Route path="/dashboard" element={<DashboardLayout />}>

@@ -86,7 +86,8 @@ export const investors: Investor[] = [
     minimumInvestment: '$250K',
     maximumInvestment: '$1.5M',
     isOnline: true,
-    createdAt: '2020-05-18T10:15:00Z'
+    createdAt: '2020-05-18T10:15:00Z',
+    industry:"Technology"
   },
   {
     id: 'i2',
@@ -102,7 +103,8 @@ export const investors: Investor[] = [
     minimumInvestment: '$500K',
     maximumInvestment: '$3M',
     isOnline: false,
-    createdAt: '2019-08-30T15:40:00Z'
+    createdAt: '2019-08-30T15:40:00Z',
+    industry:"HealthTech"
   },
   {
     id: 'i3',
@@ -115,6 +117,7 @@ export const investors: Investor[] = [
     investmentStage: ['Series A', 'Series B'],
     portfolioCompanies: ['MediTrack', 'BioGenics', 'Patient+'],
     totalInvestments: 9,
+    industry:"FinTech",
     minimumInvestment: '$1M',
     maximumInvestment: '$5M',
     isOnline: true,

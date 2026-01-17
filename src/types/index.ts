@@ -27,6 +27,7 @@ export interface Investor extends User {
   investmentInterests: string[];
   investmentStage: string[];
   portfolioCompanies: string[];
+  industry: string;
   totalInvestments: number;
   minimumInvestment: string;
   maximumInvestment: string;
@@ -70,6 +71,8 @@ export interface Document {
 
 export interface AuthContextType {
   user: User | null;
+  role: UserRole | null;                  // <-- add role state
+  setRole: (role: UserRole) => void;      // <-- add setter
   login: (email: string, password: string, role: UserRole) => Promise<void>;
   register: (name: string, email: string, password: string, role: UserRole) => Promise<void>;
   logout: () => void;
